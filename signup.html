@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="signup.css" />
+</head>
+
+<body>
+
+  <div class="signup-field">
+    <h1>Registration Form</h1>
+    <form class="form" action="code.php" method="post">
+      <div class="name">
+        <input type="text" name="fname" id="fname" placeholder="First name" required />
+        <span id="efname"></span>
+      </div>
+
+      <div class="name">
+        <input type="text" name="surname" id="surname" placeholder="Surname" required />
+        <span id="esurname"></span>
+      </div>
+
+
+
+
+      <label class="section-label">Date of Birth</label>
+
+      <div class="dob-fields">
+        <input type="date" name="dob" id="dob">
+        <span id="edob"></span>
+
+      </div>
+
+
+
+      <label class="section-label">Gender</label>
+      <div class="gender-fields">
+
+        <input type="radio" name="gender" id="genderM" value="Male">
+        <label for="genderM">Male</label>
+        <input type="radio" name="gender" id="genderF" value="Female">
+        <label for="genderF">Female</label>
+        <input type="radio" name="gender" id="genderO" value="Other">
+        <label for="genderO">Other</label>
+      </div>
+
+      <div class="name">
+        <input type="text" name="email" id="email" placeholder="Email address" required />
+        <span id="eemail"></span>
+      </div>
+      <div class="name">
+        <input type="password" name="pass" id="pass" placeholder="Password" required />
+        <span id="epass"></span>
+
+      </div>
+
+
+
+
+      <button type="submit" class="signup-btn">Sign Up</button>
+
+
+
+      <p class="login-text"><a href="Login.html">Already have an account?</a></p>
+
+
+      <script src="signup-validation.js"></script>
+
+    </form>
+  </div>
+</body>
+
+</html>
